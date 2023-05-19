@@ -1,0 +1,268 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Popping", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  background-image: linear-gradient(rgba(184, 172, 163, 0), rgba(39, 39, 38, 0.452)),  url("gradient_background_a_3_18.jpg");
+  background-size: cover;
+  background-position: left;
+  width: 100%;
+  height: 100vh;
+
+
+}
+.form-box{
+  height: 800px;
+  width: 42%;
+  max-width: 50%;
+  position: absolute;
+  bottom: 50%;
+  left:75%;
+  transform: translate(-50%,50%);
+  background:transparent;
+  backdrop-filter: blur(80px);
+  padding: 50px 60px 70px;
+  text-align:center;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
+  overflow: hidden;
+}
+.form-box h1{
+  font-size: 30px;
+  margin-bottom: 30px;
+  color:rgb(235, 27, 155);
+  position:relative;
+}
+
+.form-box h1::after{
+  content:"";
+  width:30px;
+  height: 4px;
+  border-radius:3px;
+  background:#adaab3;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.input-field{
+  background: rgb(248, 244, 248);
+  margin:10px 0;
+  border-radius:10px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow:hidden;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+}
+
+input{
+  width: 100%;
+  background : transparent;
+  border:0;
+  outline: 0;
+  padding:10px 15px;}
+
+.input-field i{
+ margin-left:15px;
+ color:#e0202099;
+}
+form p a {
+  text-decoration: none;
+  color:rgb(39, 33, 33)
+}
+.btn-field{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content : space-between;
+}
+.btn-field button{
+  margin-top:-80px;
+  flex-basis:48%;
+  background: #da6aaf;
+  color:#fff;
+  height: 35px;
+  border-radius: 50px;
+  border:0;
+  outline:0;
+  cursor: pointer;
+  transition: background 1s; 
+}
+.input-group{
+  height: 400px;
+  margin-top: -20px;
+
+}
+
+
+.btn-field button.disable{
+  background:#eaeaea;
+  color:#555;
+}
+.container .content {
+  position: absolute;
+  top:0;
+  left:0;
+  max-width:65%;
+  height: 100%;
+ 
+  padding:5%;
+  color: rgb(240, 234, 234);
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container .content .text-sci .logo{
+  font-size :10%;
+  margin-left: 25px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+ 
+ 
+}
+
+
+.field {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.field input[type="file"] {
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.field::before {
+  content: "Choose a file";
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #56b2f0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.field:hover::before,
+.field input[type="file"]:focus + ::before {
+  background-color: #0062cc;
+}
+
+.field input[type="file"]:valid + ::before:after {
+  content: attr(data-file-name);
+  margin-left: 10px;
+}
+.field::before {
+  content: "Upload your picture";
+
+}
+  
+.container .content .text-sci h2{
+  max-width:75%;
+  font-size :70px;
+  font: 50px;
+  line-height: 1;
+  margin-bottom: 80px;
+  text-shadow: 3px 4px 10px #da6aaf;
+}
+
+.container .content .text-sci  span {
+  text-shadow: 3px 4px 10px #da6aaf;
+  max-width:75%;
+  font-size: 40px;
+  margin-left: 110px;
+}
+
+.container .content .text-sci p{
+  font-size: 30px;
+  margin: 100px 0 ;
+}
+
+.container .content .text-sci .social-icons{
+  margin-top: 130px;
+  margin-left: 150px;
+  font-size: 30px;
+ 
+  
+}
+.container .content .text-sci .social-icons i{
+margin-left: 30px;
+}
+
+.btn-field1{
+margin-left: 170px;
+margin-top: 20px;
+}
+
+.btn-field1 .btn-field button:hover{
+background-color: #2cb2eb;
+}
+
+.btn-field button.disable a{
+color: black;
+}
+a{
+text-decoration: none;
+color: white;
+}
+
+
+.fa-instagram{
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.fa-facebook{
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+
+.fa-twitter{
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.fa-tiktok{
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+
+.fa-instagram:hover{
+  color: #881ced;
+}
+
+.fa-facebook:hover{
+color: #0062cc;
+}
+
+
+.fa-twitter:hover{
+  color: #43c7ff;
+}
+
+.fa-tiktok:hover{
+  color: black;
+}
